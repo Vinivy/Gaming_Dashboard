@@ -9,6 +9,11 @@
 :root {
   --accent-07: #3DBDA7;
   --primary-10 : #00453F;
+  --second-10: #1D1E22;
+}
+
+#Dark {
+
 }
 
 body {
@@ -168,20 +173,28 @@ header h1 span {
   justify-items: center;
   justify-content: center;
   align-content: center;
-  gap: 11px;
+  gap: 7px;
 
   width: 100%;
-  height: 80%;
+  height: 71%;
   border-radius: 1.5rem;
   background: var(--primary-10, #00453F);
+}
+
+.profille {
+  width: 70%
 }
 
 .Grup {
   width: 50%;
 }
 
-.avatares img {
-  width: 70%;
+.AmigosOn {
+  width: 65%;
+}
+
+.AmigosOff {
+  width: 55%;
 }
 
 /* Batepapo */
@@ -193,12 +206,15 @@ header h1 span {
   background: var(--primary-10, #00453F);
 
   width: 100%;
-  height: 20%;
+  height: 26%;
   border-radius: 1.5rem;
 }
 
 .batepapo button {
-  align-self: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
   background: #989898;
 
   width: 2rem;
@@ -208,4 +224,30 @@ header h1 span {
 
 .Kinight, .PapoOn {
   width: 100%;
+}
+
+/* Principais Sections */
+main {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+  width: 87%;
+  height: 92vh;
+}
+
+.ContainerOne {
+  background-color: black;
+}
+
+.popular {
+  background-color: aqua;
+  width: 100%;
+  height: 50%;
+}
+
+.ContainerTwo {
+  background-color: #FFF;
+  grid
 }

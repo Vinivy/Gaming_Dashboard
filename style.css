@@ -230,24 +230,43 @@ header h1 span {
 main {
   display: grid;
   justify-self: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 90vh;
 
-  width: 87%;
-  height: 92vh;
+  width: 84%;
 }
 
 .ContainerOne {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 1rem;
+
   background-color: black;
 }
 
+.ContainerOne img {
+  
+}
+
 .popular {
-  background-color: aqua;
+  display: flex;
+
   width: 100%;
-  height: 50%;
+  height: 80%;
+  border-radius: 2.5rem;
+
+  background: url(./Assets/Background/fav.jpg) top no-repeat;
+  background-size: cover;
+  
 }
 
 .ContainerTwo {
   background-color: #FFF;
-  grid
+}
+
+
+
+.Protagonista img {
+  width: 50%;
 }

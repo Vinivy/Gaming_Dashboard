@@ -230,7 +230,7 @@ header h1 span {
 main {
   display: grid;
   justify-self: center;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns:  minmax(20%, 60%) minmax(20%, 40%);
   grid-template-rows: 90vh;
 
   width: 84%;
@@ -246,14 +246,14 @@ main {
 }
 
 .ContainerOne img {
-  
+  width: 50%;
 }
 
 .popular {
   display: flex;
 
   width: 100%;
-  height: 80%;
+  height: 100%;
   border-radius: 2.5rem;
 
   background: url(./Assets/Background/fav.jpg) top no-repeat;
@@ -261,12 +261,78 @@ main {
   
 }
 
+.dadosSobre {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 24% 51% 24%;
+  border-top-left-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+
+  width: 50%;
+  background-color: blueviolet;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+
+  margin: 0 0 0 10px;
+  gap: 7px;
+  border-top-left-radius: 2.5rem;
+}
+
+#Hot {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+  width: 28%;
+  border-radius: 2rem;
+
+  color: rgb(69, 68, 71);
+  font-weight: 400;
+  
+  background:  #3DBDA7;
+}
+
+#Hot img {
+  width: 20%;
+}
+
+.info button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 9%;
+  height: 4vh;
+  border-radius: 50%;
+}
+
+.info button img {
+  width: 70%;
+}
+
 .ContainerTwo {
   background-color: #FFF;
 }
 
+.Text {
+  margin: 0 0 0 15px;
+  color: #FFF;
+  font-family: Poppins;
+}
 
+.Text h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 
-.Protagonista img {
-  width: 50%;
+.Text p {
+  color: #F4F5F6;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
 }

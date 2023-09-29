@@ -238,15 +238,15 @@ main {
 
 .ContainerOne {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1.70fr 2fr 1fr;
   grid-template-columns: repeat(1, 1fr);
-  grid-row-gap: 1rem;
-
-  background-color: black;
 }
 
-.ContainerOne img {
-  width: 50%;
+#Protagonista {
+  position: fixed;
+  width: 29%;
+  top: 41px;
+  left: 33%;
 }
 
 .popular {
@@ -258,7 +258,6 @@ main {
 
   background: url(./Assets/Background/fav.jpg) top no-repeat;
   background-size: cover;
-  
 }
 
 .dadosSobre {
@@ -269,7 +268,6 @@ main {
   border-bottom-left-radius: 2.5rem;
 
   width: 50%;
-  background-color: blueviolet;
 }
 
 .info {
@@ -305,9 +303,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
   background: black;
-  width: 9%;
-  height: 4vh;
+
+  width: 8%;
+  height: 54%;
   border-radius: 50%;
 }
 
@@ -332,7 +332,102 @@ main {
 
 .Text p {
   color: #F4F5F6;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   font-style: normal;
+}
+
+.valuation {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 15px;
+  gap: 1rem;
+}
+
+.valuation button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 0.5rem;
+  width: 9rem;
+  height: 2rem;
+  
+  color: #00453F;
+  border-radius: 20px;
+}
+
+.valuation button img {
+  width: 15%;
+}
+
+.valuation button p {
+  font-size: 13px;
+  
+}
+
+#Contas {
+  width: 25%;
+  height: 75%;
+}
+
+/*Favs Boxes*/
+#Favs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+/*downloads*/
+#downloads {
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+.lastdownloads {
+  display: flex;
+  margin: 0 1rem 0 1rem;
+  justify-content: space-between;
+}
+
+.lastdownloads p {
+  font-size: 17px;
+}
+
+.Cod {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  grid-gap: 0.50rem;
+  grid-template-columns: 10% 25% 55%;
+  grid-template-rows: max-content;
+
+  border-radius: 25px;
+  background: linear-gradient(90deg, #067D71, #3DBDA7);
+}
+
+.Cod img {
+  width: 100%;
+}
+
+.WarzoneII {
+  align-self: center;
+}
+
+.WarzoneII h1 {
+  color: #F4F5F6;
+  font-size: 20px;
+}
+
+.WarzoneII button {
+  width: 10vw;
+  height: 4vh;
+
+  color: var(--neutral-02, #E3E3E3);
+  background: #00453F;
+  
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 400;
 }

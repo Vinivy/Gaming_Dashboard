@@ -511,6 +511,56 @@ main {
   background: #067D71;
 }
 
+/*Animation de downloads*/
+
+.CarregandoDow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  width: 50px;
+  height: 50px;
+}
+
+.CarregandoDow::before {
+  content: '';
+
+  height: 46px;
+  width: 46px;
+
+  position: absolute;
+  z-index: 10;
+  animation: downloads 3s cubic-bezier(0.58, 0.54, 0.64, 0.63) infinite ;
+  border-radius: 50%;
+  background-color: transparent;
+
+  border-top: 1.5px solid  #F4F5F6;
+  border-right: 1.5px solid  #F4F5F6;
+}
+
+.CarregandoDow button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+
+  background: transparent;
+}
+
+@keyframes downloads {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*Game conteudo dentro dos dowloades rigth*/
 .Game {
   display: flex;
@@ -543,6 +593,98 @@ main {
 /*Kratos Bom de guerra*/
 .Kratos {
   display: grid;
+  grid-template-columns: 1.5fr 1fr;
   border-radius: 40px;
   background: var(--radio, radial-gradient(171.5% 171.58% at 2.13% 0%, #053732 0%, rgba(0, 108, 97, 0.99) 32.63%, rgba(14, 134, 121, 0.85) 41.71%, rgba(61, 189, 167, 0.00) 100%));
+}
+
+.dados {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 32% 15% 45%;
+  grid-row-gap: 1rem;
+
+  padding: 12.5px 0 0 12.5px;
+}
+
+/*descrição*/
+.Title h2 {
+  color: #D0D0D0;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Title h1 {
+  padding: 0 0 0 5px;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.Title p {
+  color: var(--neutral-02, #E3E3E3);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px; /* 168.75% */
+  letter-spacing: 0.5px;
+  padding: 0 0 0 5px;
+}
+
+/*Preço*/
+.Price {
+  display: grid;
+  gap: 1rem;
+}
+
+.Price h1 {
+  color: var(--neutral-01, #F4F5F6);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px; /* 112.5% */
+  letter-spacing: 0.5px;  
+}
+
+.Price button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+  border-radius: 72px;
+  background: var(--neutral-01, #F4F5F6);
+  
+  height: 33px;
+  width: 130px;
+
+  color: var(--neutral-10, #393939);
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+
+}
+
+/*estatisticas*/
+.Estatisticas {
+  display: flex;
+  align-items: center;
+}
+
+.Estatisticas img {
+  width: 50%;
+}
+
+/*Kratos Bom de Guerra kkk */
+.GodofWar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+.GodofWar img {
+  width: 117%;
 }
